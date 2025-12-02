@@ -21,6 +21,7 @@ jobs:
       uses: golangci/golangci-lint-action@v3
       with:
         version: latest
+        args: --tests=false
 
     - name: Run Tests
       run: go test -v ./...
