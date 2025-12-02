@@ -56,7 +56,7 @@ brews:
       name: homebrew-tap
 
     name: passgen
-
+    directory: Formula
     description: "A secure and deterministic password generator"
     homepage: "https://github.com/zapsaang/pass-gen"
 
