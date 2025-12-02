@@ -15,6 +15,7 @@ builds:
     goarch:
       - amd64
       - arm64
+    binary: passgen 
     main: ./cmd/passgen
     ldflags:
       - -s -w
