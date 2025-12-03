@@ -12,6 +12,26 @@
 
 ## Installation
 
+### Homebrew (macOS & Linux)
+
+```bash
+brew tap zapsaang/tap
+brew install passgen
+```
+
+### Debian/Ubuntu (via Apt)
+
+```bash
+sudo mkdir -p /etc/apt/keyrings
+
+curl -fsSL https://apt.fury.io/zapsaang/gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/zapsaang-fury.gpg
+
+echo "deb [signed-by=/etc/apt/keyrings/zapsaang-fury.gpg] https://apt.fury.io/zapsaang/ /" | sudo tee /etc/apt/sources.list.d/zapsaang.list
+
+sudo apt update
+sudo apt install passgen
+```
+
 ### From Source
 
 Ensure you have Go installed (1.24+).
